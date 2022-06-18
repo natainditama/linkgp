@@ -12,6 +12,7 @@
     "flowbite-react": "^0.0.26",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
