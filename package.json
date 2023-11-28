@@ -2,32 +2,146 @@
   "name": "linkgp",
   "private": true,
   "version": "0.0.0",
+  "description": "Minimalist boilerplate for Next with Tailwind CSS",
+  "homepage": "https://nevel.pages.dev/",
+  "bugs": {
+    "url": "https://github.com/natainditama/nevel/issues",
+    "email": "natainditama.dev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natainditama/nevel"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "natainditama",
+    "email": "natainditama.dev@gmail.com",
+    "url": "https://github.com/natainditama/"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "analyze": "cross-env ANALYZE=true next build",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "dev": "next dev",
+    "format": "prettier -w \"src/*/*.{tsx,ts,js,jsx,css}\"",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "start": "next start",
+    "tsc": "tsc --pretty --noEmit"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
-    "@hookform/resolvers": "^2.9.1",
-    "@supabase/supabase-js": "^1.35.3",
-    "flowbite": "^1.4.7",
-    "flowbite-react": "^0.0.26",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0",
-    "react-hook-form": "^7.32.2",
-    "react-router-dom": "^6.3.0",
-    "yup": "^0.32.11"
+    "@t3-oss/env-nextjs": "^0.7.1",
+    "clsx": "^2.0.0",
+    "next": "^14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.0.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@vitejs/plugin-react": "^1.3.0",
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.3",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.13"
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@next/bundle-analyzer": "^14.0.1",
+    "@types/node": "^20.8.10",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "autoprefixer": "10.4.14",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "next-sitemap": "^4.1.8",
+    "next-transpile-modules": "^9.0.0",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.1.6"
+  },
+  "engines": {
+    "node": ">18",
+    "yarn": "1.x"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "tabWidth": 2,
+    "printWidth": 80,
+    "trailingComma": "all",
+    "endOfLine": "auto"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/recommended",
+      "plugin:import/typescript",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "prettier",
+      "plugin:prettier/recommended",
+      "plugin:@next/next/recommended",
+      "next/core-web-vitals"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "tailwindcss",
+      "simple-import-sort",
+      "@typescript-eslint"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "import/no-unresolved": "off",
+      "simple-import-sort/imports": "warn",
+      "simple-import-sort/exports": "warn",
+      "no-console": [
+        "warn",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "prettier/prettier": [
+        "off",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
   }
 }

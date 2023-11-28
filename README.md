@@ -1,58 +1,157 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-
-<!--
-This README is a slimmed down version of the original one.
-Removed sections:
-- Screenshots
-- Running Test
-- Deployment
-- FAQ
-- Acknowledgements
--->
-
 <div align="center">
 
-  <img src="https://i.pinimg.com/originals/32/ea/8d/32ea8dfe6f310240151bfb58183cc533.jpg" alt="logo" width="100" height="100" style="border-radius:999px;object-fit:cover;" />
-  <h1>LinkGP</h1>
-  
+  <h1>Nevel</h1>  
+  <p>
+    Minimalist boilerplate for Next.js with Tailwind CSS 
+  </p>
+
 <!-- Badges -->
 <p>
-  <a href="https://github.com/natainditama/linkgp/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/natainditama/linkgp" alt="contributors" />
+  <a href="https://github.com/natainditama/nevel/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/natainditama/nevel" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/natainditama/linkgp" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/natainditama/nevel" alt="last update" />
   </a>
-  <a href="https://github.com/natainditama/linkgp/network/members">
-    <img src="https://img.shields.io/github/forks/natainditama/linkgp" alt="forks" />
+  <a href="https://github.com/natainditama/nevel/network/members">
+    <img src="https://img.shields.io/github/forks/natainditama/nevel" alt="forks" />
   </a>
-  <a href="https://github.com/natainditama/linkgp/stargazers">
-    <img src="https://img.shields.io/github/stars/natainditama/linkgp" alt="stars" />
+  <a href="https://github.com/natainditama/nevel/stargazers">
+    <img src="https://img.shields.io/github/stars/natainditama/nevel" alt="stars" />
   </a>
-  <a href="https://github.com/natainditama/linkgp/issues/">
-    <img src="https://img.shields.io/github/issues/natainditama/linkgp" alt="open issues" />
+  <a href="https://github.com/natainditama/nevel/issues/">
+    <img src="https://img.shields.io/github/issues/natainditama/nevel" alt="open issues" />
   </a>
-  <a href="https://github.com/natainditama/linkgp/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/natainditama/linkgp.svg" alt="license" />
+  <a href="https://github.com/natainditama/nevel/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/natainditama/nevel.svg" alt="license" />
   </a>
 </p>
    
 <h4>
-    <a href="https://github.com/natainditama/linkgp/">View Demo</a>
+    <a href="https://github.com/natainditama/nevel/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/natainditama/linkgp">Documentation</a>
+    <a href="https://github.com/natainditama/nevel">Documentation</a>
   <span> · </span>
-    <a href="https://github.com/natainditama/linkgp/issues/">Report Bug</a>
+    <a href="https://github.com/natainditama/nevel/issues/">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/natainditama/linkgp/issues/">Request Feature</a>
+    <a href="https://github.com/natainditama/nevel/issues/">Request Feature</a>
   </h4>
 </div>
 
-<br />
+<br />  
+
+<div align="center"> 
+  <img src="https://github.com/natainditama/nevel/assets/81244669/6dda2a2e-d58f-47e1-92eb-ffafac6830e3" alt="screenshot" />
+</div>
+
+<br />  
+
+<!-- About the Project -->
+## 📝 About the Project
+
+<!-- TechStack -->
+### 💻 Tech Stack
+
+This project utilizes the following technologies and tools:
+
+- Next.js
+- TailwindCSS
+
+<!-- Features -->
+### 🌟 Features
+
+This project includes the following features:
+
+- Linter with [ESLint](https://eslint.org)
+- Code Formatter with [Prettier](https://prettier.io/)
+- Integrate with [TailwindCSS](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org) for Static Site Generator
+- Type checking [TypeScript](https://www.typescriptlang.org/)
+- Sitemap.xml and robots.txt with [next-sitemap](https://www.npmjs.com/package/next-sitemap)
+
+<!-- Color Reference -->
+### 🎨 Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
+| Secondary Color | ![#e4e4e7](https://via.placeholder.com/10/e4e4e7?text=+) #e4e4e7 |
+| Background Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Text Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
+
+<!-- Env Variables -->
+### 🔑 Environment Variables
+
+This project requires the following configuration:
+
+- `NEXT_PUBLIC_SITE_URL` : The public URL of the project's
+
+<!-- Getting Started -->
+## 🚀 Getting Started
+
+<!-- Prerequisites -->
+### 🔧 Prerequisites
+
+Prerequisites for this project:
+
+- [Nodejs](https://nodejs.org)
+- [Yarn](https://yarnpkg.com/)
+
+<!-- Run Locally -->
+### 🏃 Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/natainditama/nevel.git
+```
+
+Go to the project directory
+
+```bash
+  cd nevel
+```
+
+Install dependencies
+
+```bash
+  pnpm install
+```
+
+Start the local server
+
+```bash
+  pnpm run dev
+```
+
+<!-- Contributing -->
+## 👋 Contributing
+
+<a href="https://github.com/natainditama/nevel/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=natainditama/nevel" />
+</a><br/>
+
+Contributions are always welcome!
+
+See [contributing.md](https://github.com/natainditama/nevel/blob/main/.github/CONTRIBUTING.md) for ways to get started.
+
+<!-- Code of Conduct -->
+### 📜 Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/natainditama/nevel/blob/main/.github/CODE_OF_CONDUCT.md)
+
+<!-- License -->
+## ⚠️ License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/natainditama/nevel/blob/main/LICENSE) file for details
+
+<!-- Contact -->
+## 🤝 Contact
+
+Contact me for inquiries, suggestions, or contributions via the following channels:
+
+- [Email](mailto:natainditama.dev@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/natainditama)
+- [GitHub](https://github.com/natainditama)
+
+Thank you for your support, interest, feedback, and contributions!
