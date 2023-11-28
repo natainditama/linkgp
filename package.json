@@ -46,7 +46,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
+    "@typescript-eslint/parser": "^6.13.0",
     "autoprefixer": "10.4.14",
     "cross-env": "^7.0.3",
     "eslint": "^8.52.0",
