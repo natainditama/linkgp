@@ -1653,10 +1653,15 @@ eslint-plugin-prettier@^5.0.1:
     prettier-linter-helpers "^1.0.0"
     synckit "^0.8.5"
 
-"eslint-plugin-react-hooks@^4.5.0 || 5.0.0-canary-7118f5dd7-20230705", eslint-plugin-react-hooks@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
-  integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
+"eslint-plugin-react-hooks@^4.5.0 || 5.0.0-canary-7118f5dd7-20230705":
+  version "5.0.0-canary-7118f5dd7-20230705"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0-canary-7118f5dd7-20230705.tgz#4d55c50e186f1a2b0636433d2b0b2f592ddbccfd"
+  integrity sha512-AZYbMo/NW9chdL7vk6HQzQhT+PvTAEVqWk9ziruUoW2kAOcN5qNyelv70e0F1VNQAbvutOC9oc+xfWycI9FxDw==
+
+eslint-plugin-react-hooks@^4.6.0:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.2.tgz#c829eb06c0e6f484b3fbb85a97e57784f328c596"
+  integrity sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==
 
 eslint-plugin-react@^7.33.2:
   version "7.33.2"
